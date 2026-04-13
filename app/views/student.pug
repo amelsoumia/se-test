@@ -1,0 +1,14 @@
+extends layout
+
+block Content
+    h1 Student page for: #{student.name}
+    p The ID for the student is: #{student.id}
+    
+    h2 Programme
+    p #{student.programme.name}
+
+    h2 Modules
+    ul
+        each module in student.modules
+            li #{module.name}
+    

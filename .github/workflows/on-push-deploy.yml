@@ -1,9 +1,7 @@
-# This is a basic workflow that is manually triggered
+# This is a basic workflow that is triggered by pushing to deploy
 
-name: Manual workflow
+name: Deploy Push Workflow
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   push:
     branches:
